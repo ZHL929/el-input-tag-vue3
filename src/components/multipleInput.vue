@@ -36,7 +36,7 @@ const handleInputConfim = () => {
   }
 }
 
-watch(()=>props.inputTags, (val, pre) => {
+watch(()=>props.inputTags, () => {
   inputTagList.value = props.inputTags.split(props.separator || ',')
 });
 
